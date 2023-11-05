@@ -1,0 +1,97 @@
+
+  .collectionDiv{
+    padding-bottom: 24px;
+    padding-top: 64px;  
+  }
+  .linkbuttonDiv{
+    padding: 24px 0px;
+    border-bottom: 1px solid #12121214;
+    margin-bottom: 24px;
+  }
+  .linkbutton{
+    text-decoration: none;
+    font-size: clamp(14px, 10vw, 16px);
+    color: black;
+    margin-right:8px ;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .linkbutton:hover{
+    background-color: #1212120a;
+    cursor: pointer;
+    
+  }
+
+  .buttonDiv{
+    font-size: clamp(10px, 10vw, 18px);
+    background-color: #1212120a;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+.categorieDiv{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: fit-content;
+  left: 10px;
+  border-radius: 10px;
+}
+.categorieDivPosition{
+  left: 190px;
+}
+.categorieButton{
+  width: 100%;
+  background-color: white;
+  border: none;
+  padding: 14px 14px;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 4px;
+}
+.categorieButton:hover{
+  background-color: #1212120a;
+}
+  .buttontoggle{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color: #1212120a;
+    padding: 4px;
+    border-radius: 10px;
+  }
+  .buttons{
+    font-size: clamp(10px, 10vw, 18px);
+    padding: 10px 22px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    }
+
+  .buttons:hover{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+.drawer{
+  width: 100%;
+  min-height:100%;
+  background-color: white;
+  position:absolute;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+  @media screen and (max-width:450px ){
+    .buttonDiv{
+      gap: 10px;
+  }
+    
+  }

@@ -31,13 +31,13 @@ export default function CollectionNavbar() {
         <h1 className="pr-3">Collection stats</h1>
       </div>
       <div className={`${styles.linkbuttonDiv}`}>
-        <Link href={"/trending"} className={`${styles.linkbutton}`}>
+        <Link href={"/"} className={`${styles.linkbutton}`}>
           Trending
         </Link>
-        <Link href={"/top"} className={`${styles.linkbutton} `}>
+        <Link href={"/"} className={`${styles.linkbutton} `}>
           Top
         </Link>
-        <Link href={"/watchlist"} className={`${styles.linkbutton}`}>
+        <Link href={"/"} className={`${styles.linkbutton}`}>
           Watchlist
         </Link>
       </div>
@@ -54,7 +54,7 @@ export default function CollectionNavbar() {
           {categories && (
             <>
             <div
-              className={`${styles.categorieDiv} position-absolute bg-white shadow d-lg-flex flex-column p-2 d-none`}
+              className={`${styles.categorieDiv} position-absolute bg-white d-lg-flex flex-column p-2 d-none `}
               >
               {fakeData.AllCategorieButtons.map((buttonName) => (
                 <button
@@ -125,9 +125,9 @@ export default function CollectionNavbar() {
             <button className={`${styles.buttons}`}>30d</button>
             <button className={`${styles.buttons}`}>All</button>
           </div>
-          <div className={`d-lg-none d-flex align-items-center px-1 py-2 `}>
+          <div className={` d-lg-none d-flex align-items-center  px-1 py-1`}>
             <div onClick={()=>setTime(!time)}>
-            <button className="border-0 bg-transparent me-2">{fakeData.timeData[0].time}</button>
+            <button className={` border-0 bg-transparent me-2`}>{fakeData.timeData[0].time}</button>
             <BsChevronDown></BsChevronDown>
             </div>
           </div>

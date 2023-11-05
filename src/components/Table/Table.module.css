@@ -1,0 +1,17 @@
+.mainTable{
+    width: 100%;
+    border-collapse: collapse;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.tableHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: inherit;
+}
+.cursorPointer{
+    cursor: pointer;
+}

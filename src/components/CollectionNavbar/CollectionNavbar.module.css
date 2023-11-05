@@ -39,8 +39,8 @@
 .categorieDiv{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: fit-content;
-  left: 10px;
   border-radius: 10px;
+  animation: FiltterOptions 1000ms ease 0s 1 normal forwards;
 }
 .categorieDivPosition{
   left: 190px;
@@ -49,7 +49,7 @@
   width: 100%;
   background-color: white;
   border: none;
-  padding: 14px 14px;
+  padding: 14px 24px;
   border-radius: 10px;
   text-align: left;
   margin-bottom: 4px;
@@ -57,20 +57,20 @@
 .categorieButton:hover{
   background-color: #1212120a;
 }
-  .buttontoggle{
-    display: flex;
-    align-items: center;
-    gap:10px;
-    background-color: #1212120a;
-    padding: 4px;
-    border-radius: 10px;
-  }
-  .buttons{
-    font-size: clamp(10px, 10vw, 18px);
-    padding: 10px 22px;
-    font-weight: 600;
-    background-color: transparent;
-    border: none;
+.buttontoggle{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  background-color: #1212120a;
+  padding: 4px;
+  border-radius: 10px;
+}
+.buttons{
+  font-size: clamp(10px, 10vw, 18px);
+  padding: 10px 22px;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
     }
 
   .buttons:hover{
@@ -80,18 +80,35 @@
   }
 .drawer{
   width: 100%;
-  min-height:100%;
   background-color: white;
   position:absolute;
+  border-radius: 10px;
   z-index: 20;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items:flex-start;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  animation: FiltterOptions 1000ms ease 0s 1 normal forwards;
 }
   @media screen and (max-width:450px ){
     .buttonDiv{
       gap: 10px;
+      font-size: 14px;
   }
-    
+   
   }
+
+  @keyframes FiltterOptions {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+
+ 

@@ -12,7 +12,8 @@ html {
 }
 body {
   max-width: 1920px;
-  /* overflow-x: hidden; */
+  min-height: 100vh;
+  position: relative;
   padding: 0px 10px;
 }
 

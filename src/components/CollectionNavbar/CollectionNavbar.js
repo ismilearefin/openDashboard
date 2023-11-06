@@ -41,7 +41,7 @@ export default function CollectionNavbar() {
           Watchlist
         </Link>
       </div>
-      <div className="d-flex justify-content-between align-items-center position-relative">
+      <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex " ref={menuRef}>
           {/* Categorie Button for filttering */}
           <button
@@ -54,7 +54,7 @@ export default function CollectionNavbar() {
           {categories && (
             <>
             <div
-              className={`${styles.categorieDiv} position-absolute bg-white d-lg-flex flex-column p-2 d-none `}
+              className={`${styles.categorieDiv} position-absolute bg-white d-none d-lg-flex flex-column p-2  `}
               >
               {fakeData.AllCategorieButtons.map((buttonName) => (
                 <button
@@ -90,7 +90,7 @@ export default function CollectionNavbar() {
           {chains && (
             <>
             <div
-              className={`${styles.categorieDiv} ${styles.categorieDivPosition} position-absolute bg-white shadow d-flex flex-column p-2`}
+              className={`${styles.categorieDiv} ${styles.categorieDivPosition} position-absolute bg-white shadow d-none d-lg-flex flex-column p-2`}
               >
               {fakeData.AllCategorieButtons.map((buttonName) => (
                 <button
@@ -134,7 +134,7 @@ export default function CollectionNavbar() {
         </div>
           {
                 time && (
-                  <div className={`${styles.drawer} d-flex d-lg-none left-0 top-0`}>
+                  <div className={`${styles.drawer} d-flex d-lg-none `}>
               <p className={`${styles.buttons} d-flex justify-content-between w-100`}>Select <span onClick={() => setTime(false)}><AiOutlineClose /></span></p>
             {fakeData.timeData.map((time) => (
                 <button

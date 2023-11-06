@@ -17,3 +17,6 @@
 .tableData:hover{
     background-color: #1212120a;
 }
+.noMargin{
+    margin-block: unset;
+  }
